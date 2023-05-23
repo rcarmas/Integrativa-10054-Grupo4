@@ -107,8 +107,8 @@
                     <h3 class="text-secondary mb-0">Portfolio</h3>
                     <h2 class="mb-5">Integrantes</h2>
                 </div>
-                <div class="row gx-0">
-                    <div class="col-lg-6">
+                <div class="row gx-0" id="app">
+                    <!-- <div class="col-lg-6">
                         <a class="portfolio-item" href="#!">
                             <div class="caption">
                                 <div class="caption-content">
@@ -140,14 +140,16 @@
                             </div>
                             <img class="img-fluid" src="assets/img/rafa.JPG" alt="..." />
                         </a>
-                    </div>
-                    <div id="app">
-                        <portfolio-item
-                            name = "Dilan Zurita"
-                            description= "Joven estudiante universitario de sexto semestre en la carrera de tecnologías de la información."
-                            image= "assets/img/dilan.JPG"
-                        ></portfolio-item>
-                    </div>                      
+                    </div> -->
+                    
+                    <portfolio-item
+                        v-for="(item, index) in portfolioItems"
+                        :key="index"
+                        :name="item.name"
+                        :description="item.description"
+                        :image="item.image"
+                    ></portfolio-item>
+                            
                 </div>
             </div>
         </section>
