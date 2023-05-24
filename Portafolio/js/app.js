@@ -5,8 +5,10 @@ Vue.component('portfolio-item', {
         <a class="portfolio-item" href="#!">
           <div class="caption">
             <div class="caption-content">
-              <div class="h2">{{ name }}</div>
+              <div class="h2" style="padding-left: 215px;">{{ name }}
+              <p></p>
               <p class="mb-0">{{ description }}</p>
+              </div>
             </div>
           </div>
           <img class="img-fluid" :src="image" alt="..." />

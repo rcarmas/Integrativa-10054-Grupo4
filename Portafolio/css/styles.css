@@ -11052,7 +11052,8 @@ footer.footer .social-link:hover {
   z-index: 1;
 }
 .portfolio-item .caption .caption-content {
-  color: #fff;
+  display: flex;
+  color: black;
   margin: auto 2rem 2rem;
 }
 .portfolio-item .caption .caption-content h2, .portfolio-item .caption .caption-content .h2 {
@@ -11060,8 +11061,8 @@ footer.footer .social-link:hover {
   text-transform: uppercase;
 }
 .portfolio-item .caption .caption-content p {
-  font-weight: 300;
-  font-size: 1.2rem;
+  font-weight: 500;
+  font-size: 1rem;
 }
 @media (min-width: 992px) {
   .portfolio-item {
