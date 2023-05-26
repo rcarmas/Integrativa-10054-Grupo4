@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Stylish Portfolio - Start Bootstrap Template</title>
+        <title>Página Web con Componentes - Grupo: 4</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
@@ -22,12 +22,12 @@
         <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
         <nav id="sidebar-wrapper">
             <ul class="sidebar-nav">
-                <li class="sidebar-brand"><a href="#page-top">Start Bootstrap</a></li>
+                <li class="sidebar-brand"><a href="#page-top">Web Force</a></li>
                 <li class="sidebar-nav-item"><a href="#page-top">Home</a></li>
-                <li class="sidebar-nav-item"><a href="#about">About</a></li>
-                <li class="sidebar-nav-item"><a href="#services">Services</a></li>
-                <li class="sidebar-nav-item"><a href="#portfolio">Portfolio</a></li>
-                <li class="sidebar-nav-item"><a href="#contact">Contact</a></li>
+                <li class="sidebar-nav-item"><a href="#about">Sobre nosotros</a></li>
+                <li class="sidebar-nav-item"><a href="#services">Servicios</a></li>
+                <li class="sidebar-nav-item"><a href="#portfolio">Portafolio</a></li>
+                <li class="sidebar-nav-item"><a href="#contact">Contacto</a></li>
             </ul>
         </nav>
         <!-- Header-->
@@ -36,7 +36,7 @@
                 <img src="assets/img/Logo.png" alt="" width="170px" height="100px">
                 <h1 class="mb-1">Web Force</h1>
                 <h3 class="mb-5"><em>Conectando el mundo a través de la innovación tecnológica</em></h3>
-                <a class="btn btn-primary btn-xl" href="#about">Find Out More</a>
+                <a class="btn btn-primary btn-xl" href="#about">Conócenos !</a>
             </div>
         </header>
         <!-- About-->
@@ -49,7 +49,7 @@
                             Web Force es un grupo de trabajo dedicado a la creación eficiente y creativa de paginas y sistemas web, con un enfoque adaptado a las necesidades del cliente/usuario.
                             Con la garantía y el respaldo de profesionales de alta gama.
                         </p>
-                        <a class="btn btn-dark btn-xl" href="#services">What We Offer</a>
+                        <a class="btn btn-dark btn-xl" href="#services">Que Ofrecemos</a>
                     </div>
                 </div>
             </div>
@@ -65,26 +65,22 @@
                     <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
                         <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-screen-smartphone"></i></span>
                         <h4><strong>Eficiencia</strong></h4>
-                        <p class="text-faded mb-0">Looks great on any screen size!</p>
+                        <p class="text-faded mb-0"></p>
                     </div>
                     <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
                         <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-pencil"></i></span>
                         <h4><strong>Calidad</strong></h4>
-                        <p class="text-faded mb-0">Freshly redesigned for Bootstrap 5.</p>
+                        <p class="text-faded mb-0"></p>
                     </div>
                     <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
                         <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-like"></i></span>
                         <h4><strong>Innovacion</strong></h4>
-                        <p class="text-faded mb-0">
-                            Millions of users
-                            <i class="fas fa-heart"></i>
-                            Start Bootstrap!
-                        </p>
+                        <p class="text-faded mb-0"></p>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-mustache"></i></span>
-                        <h4><strong>Retroalimentacion</strong></h4>
-                        <p class="text-faded mb-0">I mustache you a question...</p>
+                        <h4><strong>Alta Disponibilidad</strong></h4>
+                        <p class="text-faded mb-0"></p>
                     </div>
                 </div>
             </div>
@@ -93,18 +89,18 @@
         <section class="callout">
             <div class="container px-4 px-lg-5 text-center">
                 <h2 class="mx-auto mb-5">
-                    Welcome to
-                    <em>your</em>
-                    next website!
+                    Conoce
+                    <em>nuestra</em>
+                    experiencia!
                 </h2>
-                <a class="btn btn-primary btn-xl" href="https://startbootstrap.com/theme/stylish-portfolio/">Download Now!</a>
+                <a class="btn btn-primary btn-xl" href="#portfolio">Portafolio</a>
             </div>
         </section>
         <!-- Portfolio-->
         <section class="content-section" id="portfolio">
             <div class="container px-4 px-lg-5">
                 <div class="content-section-heading text-center">
-                    <h3 class="text-secondary mb-0">Portfolio</h3>
+                    <h3 class="text-secondary mb-0">Portafolio</h3>
                     <h2 class="mb-5">Integrantes</h2>
                 </div>
                 <div class="row gx-0" id="app" >
@@ -145,6 +141,7 @@
                     <portfolio-item
                         v-for="(item, index) in portfolioItems"
                         :key="index"
+                        :repositories="item.repositories"
                         :name="item.name"
                         :description="item.description"
                         :image="item.image"
@@ -154,18 +151,18 @@
             </div>
         </section>
         <!-- Call to Action-->
-        <section class="content-section bg-primary text-white">
-            <div class="container px-4 px-lg-5 text-center">
+        <section class="content-section-otra bg-dark text-white" style="background-image: url('assets/img/contactos.jpg'); background-size: cover; ">
+             <!-- <div class="container px-4 px-lg-5 text-center" >
                 <h2 class="mb-4">The buttons below are impossible to resist...</h2>
                 <a class="btn btn-xl btn-light me-4" href="#!">Click Me!</a>
-                <a class="btn btn-xl btn-dark" href="#!">Look at Me!</a>
-            </div>
+                <a class="btn btn-xl btn-dark" href="#!">Look at Me!</a> 
+            </div> -->
         </section>
         <!-- Map-->
         <div class="map" id="contact">
-            <iframe src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127673.0702042213!2d-78.56110070973813!3d-0.23956733005705272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d5bd12538eb13b%3A0x907c61f1abbe45ab!2sUniversidad%20de%20las%20Fuerzas%20Armadas%20ESPE!5e0!3m2!1ses!2sec!4v1685125014314!5m2!1ses!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             <br />
-            <small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a></small>
+            <small><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127673.0702042213!2d-78.56110070973813!3d-0.23956733005705272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d5bd12538eb13b%3A0x907c61f1abbe45ab!2sUniversidad%20de%20las%20Fuerzas%20Armadas%20ESPE!5e0!3m2!1ses!2sec!4v1685125014314!5m2!1ses!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></a></small>
         </div>
         <!-- Footer-->
         <footer class="footer text-center">
@@ -181,7 +178,7 @@
                         <a class="social-link rounded-circle text-white" href="#!"><i class="icon-social-github"></i></a>
                     </li>
                 </ul>
-                <p class="text-muted small mb-0">Copyright &copy; Your Website 2023</p>
+                <p class="text-muted small mb-0">Copyright &copy; Grupo 4</p>
             </div>
         </footer>
         <!-- Scroll to Top Button-->

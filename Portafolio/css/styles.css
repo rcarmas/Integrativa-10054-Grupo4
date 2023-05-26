@@ -599,7 +599,7 @@ progress {
 
 .img-fluid {
   max-width: 100%;
-  height: 250px;
+  height: 260px;
 }
 
 
@@ -8165,6 +8165,8 @@ textarea.form-control-lg {
   background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
 }
 
+
+
 .bg-black {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-black-rgb), var(--bs-bg-opacity)) !important;
@@ -10834,6 +10836,10 @@ html {
 .content-section {
   padding-top: 7.5rem;
   padding-bottom: 7.5rem;
+}
+
+.content-section-otra {
+  padding-top: 800px;
 }
 
 .content-section-heading h2, .content-section-heading .h2 {
